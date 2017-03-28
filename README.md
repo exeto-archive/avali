@@ -14,7 +14,7 @@ $ npm install --save avali
 const avali = require('avali');
 
 function something(a, b) {
-  avali(['str', 'arr, nil'], arguments);
+  avali(['str', 'arr, undef'], arguments);
   // ...
 }
 ```
@@ -29,20 +29,21 @@ Type: `array`
 
 Each argument is an array element, which is a string with the valid types listed, separated by commas.
 
-rule | description
----- | -----------
-any  | any type
-str  | string
-num  | number
-bool | boolean
-func | function
-arr  | array
-err  | error
-nil  | null or undefined
-obj  | object
-args | arguments
+rule  | description
+----- | -----------
+any   | any type
+str   | string
+num   | number
+bool  | boolean
+func  | function
+arr   | array
+err   | error
+nil   | null
+undef | undefined
+obj   | object
+args  | arguments
 
-If necessary, set the optional parameter, use `nil` in together with other types.
+If necessary, set the optional parameter, use `undef` in together with other types.
 
 #### args
 
