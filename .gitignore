@@ -11,3 +11,6 @@ yarn.lock
 
 # EDITOR
 .vscode
+
+# OTHER
+coverage

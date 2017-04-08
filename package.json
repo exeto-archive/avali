@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint lib",
-    "prepublish": "npm run lint"
+    "test": "npm run lint && jest lib --coverage",
+    "prepublish": "npm test"
   },
   "files": [
     "lib"
@@ -21,8 +22,16 @@
     "is": "^3.2.1"
   },
   "devDependencies": {
+    "coveralls": "^2.12.0",
     "eslint": "^3.2.2",
     "eslint-config-exeto-base": "^3.0.2",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^19.0.2"
+  },
+  "jest": {
+    "collectCoverageFrom" : [
+      "!**/node_modules/**",
+      "**/*.js"
+    ]
   }
 }
