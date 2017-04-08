@@ -3,7 +3,7 @@
 
 'use strict';
 
-const avali = require('avali');
+const avali = require('./');
 
 test('it should throw error when incorrect arguments', () => {
   expect(() => {

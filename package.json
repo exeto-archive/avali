@@ -7,12 +7,14 @@
   "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/)",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint lib",
-    "test": "npm run lint && jest lib --coverage",
-    "prepublish": "npm test"
+    "lint": "eslint src",
+    "test": "npm run lint && jest src --coverage",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm test && npm run build"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "keywords": [
     "arguments",
@@ -23,6 +25,8 @@
     "is": "^3.2.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
     "coveralls": "^2.12.0",
     "eslint": "^3.2.2",
     "eslint-config-exeto-base": "^3.0.2",
@@ -31,7 +35,7 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "lib/**/*.js"
+      "src/**/*.js"
     ]
   }
 }
