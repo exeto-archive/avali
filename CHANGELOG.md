@@ -1,3 +1,7 @@
+0.2.1 / 2017-04-09
+==================
+- Add babel compilation
+
 0.2.0 / 2017-04-08
 ==================
 - Remove babel transpiling
