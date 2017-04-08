@@ -29,9 +29,8 @@
     "jest": "^19.0.2"
   },
   "jest": {
-    "collectCoverageFrom" : [
-      "!**/node_modules/**",
-      "**/*.js"
+    "collectCoverageFrom": [
+      "lib/**/*.js"
     ]
   }
 }
