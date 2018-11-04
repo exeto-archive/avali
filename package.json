@@ -1,6 +1,6 @@
 {
   "name": "avali",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Arguments validation",
   "main": "lib/index.js",
   "repository": "exeto-archive/avali",
