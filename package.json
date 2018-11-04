@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "description": "Arguments validation",
   "main": "lib/index.js",
-  "repository": "exeto/avali",
+  "repository": "exeto-archive/avali",
   "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/)",
   "license": "MIT",
   "scripts": {

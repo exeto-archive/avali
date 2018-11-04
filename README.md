@@ -1,7 +1,10 @@
 # avali
+
 [![Build Status][buildstat-image]][buildstat-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependency Status][depstat-image]][depstat-url]
 
 > Arguments validation
+
+**THIS PACKAGE IS NO LONGER MAINTAINED**
 
 ## Install
 
@@ -30,19 +33,19 @@ Type: `array`
 
 Each argument is an array element, which is a string with the valid types listed, separated by commas.
 
-rule  | description
------ | -----------
-any   | any type
-str   | string
-num   | number
-bool  | boolean
-func  | function
-arr   | array
-err   | error
-nil   | null
-undef | undefined
-obj   | object
-args  | arguments
+| rule  | description |
+| ----- | ----------- |
+| any   | any type    |
+| str   | string      |
+| num   | number      |
+| bool  | boolean     |
+| func  | function    |
+| arr   | array       |
+| err   | error       |
+| nil   | null        |
+| undef | undefined   |
+| obj   | object      |
+| args  | arguments   |
 
 If necessary, set the optional parameter, use `undef` in together with other types.
 
